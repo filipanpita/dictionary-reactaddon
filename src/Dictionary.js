@@ -45,11 +45,10 @@ export default function Dictionary() {
   return (
     <div className="Dictionary">
       <section>
-        <h1>What would you like to learn today?</h1>
+        <h1>Search for a definition</h1>
         <form onSubmit={search}>
           <input type="search" onChange={handleKeyWordChange} />
         </form>
-        <div className="hint">i.e. food, sport, art, coding</div>
       </section>
 
       <Results results={results} />
